@@ -111,7 +111,7 @@ print("*****************************************")
 flag=True
 while flag:
 
-    print("select the sorting method : 1-->bubbleSort...2-->selectionSort.....3-->insertionSort.....4-->quicksort....5-->mergesort")
+    print("select the sorting method : 1-->bubbleSort...2-->selectionSort.....3-->insertionSort.....4-->quicksort....5-->mergesort..0-->exit ")
     b=int(input())
     if(b==1):
         Bsort(x)
