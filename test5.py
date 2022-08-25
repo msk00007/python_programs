@@ -5,7 +5,7 @@ class rechatngle:
         self.breadth = breadth
     def area(self):
         return self.length*self.breadth
-    def paremeter(self):
+    def perimeter(self):
         return 2*(self.length+self.breadth)
     def lenofrec(self):
         return self.length
@@ -13,6 +13,9 @@ class rechatngle:
         return self.breadth
     
 R1=rechatngle(5,6)
-print(R1.area)
+print(R1.area())
+print(R1.perimeter())
+print(R1.lenofrec())
+print(R1.breofrec())
 
         
