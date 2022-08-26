@@ -7,30 +7,24 @@ for i in range(N):
     
 for i in range(N):
     ch.append(int(input()))
-b1 = b.copy()
 c =0
 for each in b:
     c+=each
-if c>M:
-    x = c-M
-    M=0
-b.sort()
-
-if b[0] >=x:
-    b[0]=b[0]-x
-    x=0
+if c<=M:
+    print("0")
 else:
+    ch.sort()
+    i=N-1
+    while M>0 and i>=0:
+        if b[i]>=M:
+            b[i]=b[i]-M
+            M=0
+        elif b[i]<M:
+            M=M-b[i]
+            b[i]=0
+            i=i-1
+    chcount=[]  
     for i in range(N):
-        x=x-b[i]
-        b[i]=0
-print(b)
-for each in b:
-    if  each<M:
-        M=M-each
-        each=0
-choccount = 0
-for i in range(N):
-    if b[i]<b1[i]:
-        I = b1[i]-b[i]
-        choccount = choccount+I*ch[i]
-print(choccount)
+            chcount.append(b[i]*ch[i])
+    print(max(chcount))
+
