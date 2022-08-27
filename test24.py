@@ -8,8 +8,6 @@ def isprime(num):
             flag = False
             break
     return flag
-
-
 N = int(input("enter the number \n"))
 if N>2:
     for i in range(2,N):
