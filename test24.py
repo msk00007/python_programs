@@ -1,8 +1,10 @@
+from math import sqrt
 def isprime(num):
     flag = True
     if num == 2:
         return flag 
-    for i in range(2,int(num)):
+    newrange = int(sqrt(num))
+    for i in range(2,newrange+1):
         if int(num) % i == 0:
             flag = False
             break
