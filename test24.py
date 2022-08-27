@@ -1,4 +1,3 @@
-
 def isprime(num):
     flag = True
     if num == 2:
