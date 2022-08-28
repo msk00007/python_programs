@@ -10,6 +10,7 @@ def fibonaci(element):
             temp = t2
             t2 = t2+t1
             t1 = temp
-fibonaci(5)
+N = int(input("enter the number to generate fibonaci sequence \n"))
+fibonaci(N)
 
     
