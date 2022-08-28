@@ -8,6 +8,7 @@ def copyfile(file1,file2):
     outputfile.close()
     outputfile = open(file2,"r")
     print(outputfile.read())
+    outputfile.close()
 
 f1 = "test1.txt"
 f2 = "copyfile.txt"
