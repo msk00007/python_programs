@@ -3,7 +3,7 @@ class node:
         self.data = data
         self.next = None
         self.prev = None
-class linkedlist():
+class doublylinkedlist():
     def __init__(self):
         self.head = None
     def insert(self,element):
@@ -32,7 +32,6 @@ class linkedlist():
         elif itr.data == delelem :
             self.head = itr.next
             self.head.prev = None
-            itr = None
             return
         while itr is not None and itr.data is not delelem :
             itr = itr.next
@@ -40,7 +39,6 @@ class linkedlist():
             print("element is not found ...")
         else:
             itr.prev.next = itr.next
-            itr = None
     def printlist(self):
         if self.head is None:
             print("list is empty cant print list...")
@@ -50,13 +48,13 @@ class linkedlist():
             print(itr.data, end = " ")
             itr = itr.next
         print()
-l = linkedlist()
+l = doublylinkedlist()
 l.insert(55)
 l.insert(5)
 l.insert(56)
 l.insert(555)
 l.printlist()
-l.delete(56)
+l.delete(555)
 l.printlist()
 l.insert(555)
 l.printlist()
