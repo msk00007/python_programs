@@ -2,31 +2,24 @@ class node:
     def __init__(self,data):
         self.data = data
         self.Next = None
-class Queuelinkedlist():
+class linkedlist():
     def __init__(self):
         self.head = None
     def enqueAtEnd(self,element):
+        new_node = node(element)
         if self.head ==None:
-            new_node = node(element)
             self.head = new_node
-            return
         else:
-            if self.head.Next == None:
-                new_node = node(element)
-                self.head.Next = new_node
-            else:
                 itr = self.head
                 while itr.Next != None:
                     itr = itr.Next
                 new_node = node(element)
                 itr.Next = new_node
     def enqueAtfirst(self,element):
+        new_node = node(element)
         if self.head ==None:
-            new_node = node(element)
-            self.head = new_node
-            return
+            self.head = new_node        
         else:
-            new_node = node(element)
             new_node.Next = self.head
             self.head = new_node
 
@@ -35,7 +28,7 @@ class Queuelinkedlist():
         if itr is None :
             print("list is empty...")
             return
-        elif itr.Next is None:
+        elif itr.Next == None:
             self.head = itr.Next
             itr = None
             return
@@ -44,16 +37,12 @@ class Queuelinkedlist():
             prev = itr
             itr = itr.Next
         prev.Next = itr.Next
-        itr = None
     def dequeAtFirst(self):
         itr = self.head
         if itr is None :
             print("list is empty...")
-            return
         else:
             self.head = itr.Next
-            itr = None
-            return
 
     def display(self):
         if self.head is None:
@@ -67,9 +56,8 @@ class Queuelinkedlist():
     def isEmpty(self):
             if self.head is None:
                 return True
-            else:
-                return False
-dueue = Queuelinkedlist()
+            return False
+dueue = linkedlist()
 print(dueue.isEmpty())
 dueue.enqueAtEnd(5)
 dueue.enqueAtEnd(58)
