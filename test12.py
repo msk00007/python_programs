@@ -1,5 +1,5 @@
 def bubble_sort(l,lb,ub):
-    if(lb<=ub):
+    if(lb<ub):
         for i in range(ub):
             for j in range(0,ub-i):
                 if l[j]>l[j+1]:
