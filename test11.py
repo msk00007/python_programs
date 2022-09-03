@@ -1,5 +1,5 @@
 def insertion(l,lb,ub):
-    if(lb<=ub):
+    if(lb<ub):
         for i in range(ub+1):
             temp = l[i]
             j=i-1
