@@ -30,12 +30,12 @@ class linkedlist():
             return
         elif itr.Next == None:
             self.head = itr.Next
-            return
-        prev = itr
-        while itr.Next is not None :
+        else:
             prev = itr
-            itr = itr.Next
-        prev.Next = itr.Next
+            while itr.Next is not None :
+                prev = itr
+                itr = itr.Next
+            prev.Next = itr.Next
     def dequeAtFirst(self):
         itr = self.head
         if itr is None :
