@@ -10,10 +10,11 @@ class stack():
     def isEmpty(self):
         if len(self.l) == 0:
             return True
-        
         return False
     def display(self):
-        print(self.l)
+        print(self.l[::-1])
+    def size(self):
+        return len(self.l)
     
 
 Stack = stack()
@@ -25,3 +26,4 @@ Stack.display()
 Stack.pop()
 Stack.display()
 print(Stack.isEmpty())
+print(Stack.size())
