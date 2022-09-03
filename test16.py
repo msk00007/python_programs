@@ -30,7 +30,6 @@ class linkedlist():
             return
         elif itr.Next == None:
             self.head = itr.Next
-            itr = None
             return
         prev = itr
         while itr.Next is not None :
