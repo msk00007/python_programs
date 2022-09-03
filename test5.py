@@ -1,4 +1,4 @@
-class rechatngle:
+class rectangle:
     
     def __init__(self,length,breadth):
         self.length= length
@@ -11,8 +11,9 @@ class rechatngle:
         return self.length
     def breofrec(self):
         return self.breadth
-    
-R1=rechatngle(5,6)
+l = int(input("enter the length ..")
+b = int(input("enter the breadth...")
+R1=rechatngle(l,b)
 print(R1.area())
 print(R1.perimeter())
 print(R1.lenofrec())
