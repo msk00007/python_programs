@@ -8,12 +8,10 @@ class doublylinkedlist():
         self.head = None
 
     def enqueAtfirst(self,element):
+        new_node = node(element)
         if self.head is None:
-            new_node = node(element)
             self.head = new_node
-            return
         else:
-            new_node = node(element)
             new_node.next = self.head
             self.head.prev = new_node
             self.head = new_node
@@ -22,12 +20,7 @@ class doublylinkedlist():
         new_node = node(element)
         if self.head ==None:
             self.head = new_node
-            return
         else:
-            if self.head.next == None:
-                new_node.prev = self.head
-                self.head.next = new_node     
-            else:
                 itr = self.head
                 while itr.next != None:
                     itr = itr.next
@@ -37,26 +30,21 @@ class doublylinkedlist():
         itr = self.head
         if itr is None :
             print("list is empty...")
-            return
         elif itr.next == None :
             self.head = itr.next
-            itr = None
-            return
-        while itr.next is not None :
-            itr = itr.next
-        itr.prev.next = itr.next
-        itr = None
+        else:
+            while itr.next is not None :
+                itr = itr.next
+            itr.prev.next = itr.next
     def dequeAtFirst(self):
         itr = self.head
         if itr is None:
             print("list is empty .....")
         elif itr.next == None:
             self.head = itr.next
-            itr = None
         else:
             itr.next.prev = itr.prev
             self.head = itr.next
-            itr= None
     def display(self):
         if self.head is None:
             print("list is empty cant print list...")
