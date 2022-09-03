@@ -27,16 +27,14 @@ class linkedlist():
             return
         elif itr.data == delelem :
             self.head = itr.Next
-            itr = None
             return
         prev = itr
         while itr is not None and itr.data is not delelem :
             prev = itr
             itr = itr.Next
-        if itr is None:
+        if itr == None:
             print("element is not found ...")
-            return
-        elif itr.data == delelem :
+        else:
             prev.Next = itr.Next
     def printlist(self):
         if self.head is None:
@@ -49,11 +47,11 @@ class linkedlist():
         print()
 l = linkedlist()
 l.insert(55)
-l.insert(5)
-l.insert(56)
-l.insert(555)
+# l.insert(5)
+# l.insert(56)
+# l.insert(555)
 l.printlist()
-l.delete(555)
+l.delete(55)
 l.printlist()
 l.insert(555)
 l.printlist()
