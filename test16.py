@@ -2,7 +2,7 @@ class node:
     def __init__(self,data):
         self.data = data
         self.Next = None
-class linkedlist():
+class Queuelinkedlist():
     def __init__(self):
         self.head = None
     def enqueAtEnd(self,element):
@@ -69,7 +69,7 @@ class linkedlist():
                 return True
             else:
                 return False
-dueue = linkedlist()
+dueue = Queuelinkedlist()
 print(dueue.isEmpty())
 dueue.enqueAtEnd(5)
 dueue.enqueAtEnd(58)
