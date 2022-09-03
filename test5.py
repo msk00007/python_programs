@@ -11,9 +11,9 @@ class rectangle:
         return self.length
     def breofrec(self):
         return self.breadth
-l = int(input("enter the length ..")
-b = int(input("enter the breadth...")
-R1=rechatngle(l,b)
+l = int(input("enter the length .."))
+b = int(input("enter the breadth..."))
+R1=rectangle(l,b)
 print(R1.area())
 print(R1.perimeter())
 print(R1.lenofrec())
