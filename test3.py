@@ -1,6 +1,3 @@
-from importlib import import_module
-
-
 filename = input("enter the file name..")
 input_file = open(filename,"r")
 line = input_file.readline()
