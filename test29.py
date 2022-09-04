@@ -1,8 +1,11 @@
 import sys
-
-inputfile = open(sys.argv[1],"r")
-# print("the path of the file is ",sys.argv[1])
-N = int(sys.argv[2])
-inputfile.seek(N)
-print(inputfile.read())
-inputfile.close()
+try:
+    try:
+        inputfile = open(sys.argv[1],"r")
+    except:
+        print("Error accured while opening the file..")
+        exit()
+    inputfile.seek(int(sys.argv[2]))
+    print(inputfile.read())
+except:
+    print("Errors accured for location...")
