@@ -1,5 +1,8 @@
-filename = input("enter the file name..")
-input_file = open(filename,"r")
+try:
+    filename = input("enter the file name..")
+    input_file = open(filename,"r")
+except:
+    print("file not found error please try again and give correct file")
 line = input_file.readline()
 emptystr = ""
 charcount = 0
