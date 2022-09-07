@@ -24,7 +24,7 @@ class deque:
             delitem = self.l.pop(0)
             return delitem
     def size(self):
-        return len(self.size)
+        return len(self.l)
     def display(self):
         for each in self.l:
             print(each,end = " ")
