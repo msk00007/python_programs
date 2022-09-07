@@ -12,7 +12,7 @@ class queue:
         if len(self.l)==,0:
             print("queue is empty")
         else:
-            print(self.l[-1])
+            print(self.l[0])
     def isEmpty(self):
         if len(self.l) == 0:
             return True
