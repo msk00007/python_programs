@@ -8,8 +8,8 @@ class stacklinkedlist:
         self.tail = None
     def push(self,elem):
         new_node = node(elem)
-        itr = self.head
-        if(itr == None):
+        
+        if(self head == None):
             self.head = new_node
             self.tail = self.head
         else:
