@@ -1,4 +1,4 @@
-class queue():
+class queue:
     def __init__(self):
         self.l=[]
     def Add(self,element):
