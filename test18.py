@@ -38,7 +38,7 @@ class stacklinkedlist:
         return False
     def peek(self):
         if self.tail != None:
-            self.tail.data
+            print(self.tail.data)
         else:
             print("Stack is empty")
    
