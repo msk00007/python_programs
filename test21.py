@@ -4,9 +4,15 @@ class queue:
     def Add(self,element):
         self.l.append(element)
     def remove(self):
+        if len(self.l)==0:
+            print("Queue is empty")
+            return
         self.l.pop(0)
-    def peek(self):
-        print(self.l[-1])
+    def front(self):
+        if len(self.l)==,0:
+            print("queue is empty")
+        else:
+            print(self.l[-1])
     def isEmpty(self):
         if len(self.l) == 0:
             return True
