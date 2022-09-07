@@ -3,6 +3,7 @@ try:
     input_file = open(filename,"r")
 except:
     print("file not found error please try again and give correct file")
+    exit()
 line = input_file.readline()
 emptystr = ""
 charcount = 0
