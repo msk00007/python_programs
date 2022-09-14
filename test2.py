@@ -12,3 +12,19 @@ while line!= empty_str:
     line = input_File.readline()
 input_File.close()
 print(list)
+# another method:
+# use the above try block here also....
+filename = input("Enter the file name\n")
+file = open(filename,"r")
+list = file.readlines()
+list.sort()
+for i in list:
+    print(i.strip("\n"))
+
+
+# second method....
+# with open(filename) as file1:
+#     list = file1.readlines()
+#     list.sort()
+#     for each in list:
+#         print(each.strip())
