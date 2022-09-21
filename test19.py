@@ -1,4 +1,3 @@
-from xml.etree.ElementTree import iselement
 
 
 class node:
