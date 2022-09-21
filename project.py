@@ -1,7 +1,5 @@
 from cProfile import label
-import string
 from tkinter import *
-from tkinter import messagebox
 def flames():
     S1 = list(boy_name.get())
     S2 = list(girl_name.get())
@@ -51,14 +49,14 @@ def flames():
 window = Tk()
 window.title("FLAMES")
 window.configure(background="light pink")
-window.geometry("720x640")
+window.geometry("750x450")
 boy_name = StringVar()
 girl_name = StringVar()
-l1 = Label(window,text ="enter the boy name..").grid(row=0,column=0)
-e1 = Entry(window,textvariable=boy_name ,bd=5).grid(row=0,column=1)
-l2 = Label(window,text ="enter the girl name..").grid(row=1,column=0)
-e2 = Entry(window,textvariable=girl_name ,bd=5).grid(row=1,column=1)
-b1 = Button(window,text="flamify",command=flames).grid(row=2,column=1)
-label=Label(window, text="Loading..", font=('Calibri 15'))
+l1 = Label(window,text ="enter the boy name..",bg="light blue").grid(row=0,column=0)
+e1 = Entry(window,textvariable=boy_name ,bg="light grey",bd=5).grid(row=0,column=1)
+l2 = Label(window,text ="enter the girl name..",bg="light blue").grid(row=1,column=0)
+e2 = Entry(window,textvariable=girl_name ,bg="light grey",bd=5).grid(row=1,column=1)
+b1 = Button(window,text="flamify",command=flames,bg="light yellow").grid(row=2,column=1)
+label=Label(window, text="Loading..", bg="light pink",font=('Calibri 14'))
 label.grid(row=6,column=3)
 window.mainloop()
