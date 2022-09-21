@@ -1,16 +1,12 @@
 def Bsearch(l,lb,ub,key):
-    if lb<=ub:
+    while lb<=ub:
         mid = (lb+ub)//2
         if l[mid]==key:
             return mid
         elif key<l[mid]:
-            for i in range(lb,mid):
-                if l[i]==key:
-                    return i
+            ub = mid-1
         elif key>l[mid]:
-            for i in range(mid+1,ub+1):
-                if l[i]==key:
-                    return i
+            lb = mid+1
     return -1
 list=[]
 n=int(input("Enter the range of the list \n"))
