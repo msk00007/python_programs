@@ -37,8 +37,8 @@ def preorder(root):
 def postorder(root):
     if root is None:
         return
-    preorder(root.left)
-    preorder(root.right)
+    postorder(root.left)
+    postorder(root.right)
     print(root.data,end=" ")
 r = None
 r=insert(r,5)
