@@ -38,7 +38,11 @@ class doublylinkedlist():
         if itr is None:
             print("element is not found ...")
         else:
-            itr.prev.next = itr.next
+            if itr.next == None:
+                itr.prev.next = itr.next
+            else:
+                itr.prev.next = itr.next
+                itr.next.prev = itr.prev
     def printlist(self):
         if self.head is None:
             print("list is empty cant print list...")
@@ -54,7 +58,7 @@ l.insert(5)
 l.insert(56)
 l.insert(555)
 l.printlist()
-l.delete(555)
+l.delete(55)
 l.printlist()
 l.insert(555)
 l.printlist()
