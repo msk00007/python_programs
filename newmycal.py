@@ -3,7 +3,6 @@ mycal = [["   " for x in range(12)] for x in range(10)]
 y = int(input("Enter year : "))
 weekdays = {6:"sun",0:"mon",1:"tue",2:"wed",3:"thu",4:"fri",5:"sat"}
 months = {1:"jan",2:"feb",3:"mar",4:"apr",5:"may",6:"jun",7:"jul",8:"aug",9:"sep",10:"oct",11:"nov",12:"dec"}
-keyslist = list(weekdays.keys())
 start = date(y,1,1)
 val = start.weekday()
 num = 0;
